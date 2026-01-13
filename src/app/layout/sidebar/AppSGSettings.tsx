@@ -1,3 +1,4 @@
+import { ModeToggle } from "@/components/mode-toggle";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -16,27 +17,27 @@ import { ChevronUp, Settings } from "lucide-react";
 export function AppSGSettings() {
   return (
     <>
-      <SidebarGroup>
-        <SidebarMenu>
-          <SidebarMenuItem>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <SidebarMenuButton variant={"outline"} className="border-2">
-                  <Settings />
-                  Settings
-                  <ChevronUp className="ml-auto" />
-                </SidebarMenuButton>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuGroup>
-                  <DropdownMenuItem>Audio</DropdownMenuItem>
-                  <DropdownMenuItem>Video</DropdownMenuItem>
-                  <DropdownMenuItem>Misc</DropdownMenuItem>
-                </DropdownMenuGroup>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </SidebarMenuItem>
-        </SidebarMenu>
+      <SidebarGroup className="flex-row">
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <SidebarMenuButton
+              variant={"outline"}
+              className="border-2 w-auto px-2"
+            >
+              <Settings />
+              Settings
+              <ChevronUp className="ml-auto" />
+            </SidebarMenuButton>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuGroup>
+              <DropdownMenuItem>Audio</DropdownMenuItem>
+              <DropdownMenuItem>Video</DropdownMenuItem>
+              <DropdownMenuItem>Misc</DropdownMenuItem>
+            </DropdownMenuGroup>
+          </DropdownMenuContent>
+        </DropdownMenu>
+        <ModeToggle />
       </SidebarGroup>
     </>
   );
