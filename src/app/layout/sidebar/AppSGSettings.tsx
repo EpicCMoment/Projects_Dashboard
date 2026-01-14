@@ -17,28 +17,32 @@ import { ChevronUp, Settings } from "lucide-react";
 export function AppSGSettings() {
   return (
     <>
-      <SidebarGroup className="flex-row">
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <SidebarMenuButton
-              variant={"outline"}
-              className="border-2 w-auto px-2"
+      <SidebarMenu>
+        <SidebarMenuItem className="flex items-center">
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <SidebarMenuButton variant="outline" tooltip="Settings">
+                <Settings />
+                <span>Settings</span>
+                <ChevronUp className="ml-auto" />
+              </SidebarMenuButton>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent
+              side="top"
+              align="start"
+              className="w-[--radix-popper-anchor-width]"
             >
-              <Settings />
-              Settings
-              <ChevronUp className="ml-auto" />
-            </SidebarMenuButton>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuGroup>
               <DropdownMenuItem>Audio</DropdownMenuItem>
               <DropdownMenuItem>Video</DropdownMenuItem>
               <DropdownMenuItem>Misc</DropdownMenuItem>
-            </DropdownMenuGroup>
-          </DropdownMenuContent>
-        </DropdownMenu>
-        <ModeToggle />
-      </SidebarGroup>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          <div className="group-data-[collapsible=icon]:hidden ml-2">
+            <ModeToggle />
+          </div>
+        </SidebarMenuItem>
+      </SidebarMenu>
     </>
   );
 }

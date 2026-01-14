@@ -20,7 +20,7 @@ export function AppSidebar() {
         <AppSGProjects />
       </SidebarContent>
 
-      <SidebarFooter className="flex-row">
+      <SidebarFooter>
         <AppSGSettings />
       </SidebarFooter>
     </Sidebar>
