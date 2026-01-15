@@ -1,13 +1,10 @@
-import { ModeToggle } from "@/components/mode-toggle";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import {
-  SidebarGroup,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
@@ -37,10 +34,6 @@ export function AppSGSettings() {
               <DropdownMenuItem>Misc</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-
-          <div className="group-data-[collapsible=icon]:hidden ml-2">
-            <ModeToggle />
-          </div>
         </SidebarMenuItem>
       </SidebarMenu>
     </>

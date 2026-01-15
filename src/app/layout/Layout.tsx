@@ -8,6 +8,15 @@ interface LayoutProps {
   children: ReactNode;
 }
 
+/**
+ * `Layout` describes the general view of a page. Each page should
+ * return a `Layout` as the root component and put main content as
+ * its `children`.
+ *
+ * `Layout` consists of a sidebar on the left and main content
+ * on the right. `children` of the Layout is displayed in the main
+ * content.
+ */
 export function Layout({ children }: LayoutProps) {
   return (
     <SidebarProvider>
