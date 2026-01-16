@@ -29,3 +29,4 @@ export const ProjectSchema = z.object({
 });
 
 export type Project = z.infer<typeof ProjectSchema>;
+export type ProjectArray = Project[];

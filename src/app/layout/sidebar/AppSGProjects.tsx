@@ -1,3 +1,4 @@
+import { GetSampleProjects } from "@/app/backend/Backend";
 import {
   SidebarGroup,
   SidebarGroupContent,
@@ -7,22 +8,6 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 
-const recent_projects = [
-  {
-    title: "Epyc Income",
-    url: "/projects/epyc_income",
-  },
-
-  {
-    title: "Holy Serpent",
-    url: "/projects/holy_serpent",
-  },
-  {
-    title: "Zehra's Tasks",
-    url: "/projects/zehras_tasks",
-  },
-];
-
 export function AppSGProjects() {
   return (
     <>
@@ -30,12 +15,12 @@ export function AppSGProjects() {
         <SidebarGroupLabel>Recent Projects</SidebarGroupLabel>
         <SidebarGroupContent>
           <SidebarMenu>
-            {recent_projects.map((project) => {
+            {GetSampleProjects().map((project) => {
               return (
-                <SidebarMenuItem key={project.title}>
+                <SidebarMenuItem key={project.project_id}>
                   <SidebarMenuButton asChild>
-                    <a href={project.url}>
-                      <span>{project.title}</span>
+                    <a href={"/projects/" + project.project_id}>
+                      <span>{project.project_name}</span>
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>

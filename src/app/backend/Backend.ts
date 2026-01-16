@@ -1,7 +1,7 @@
 import * as z from "zod";
 import { SampleSchema } from "./models/sample-wrapper";
 import sampleDataRaw from "./sample_data.json";
-import { type Project } from "./models/project";
+import { type Project, type ProjectArray } from "./models/project";
 import { type TableArray } from "./models/table";
 import type { OperationArray } from "./models/operation";
 
@@ -20,7 +20,17 @@ export function GetSampleData() {
   return sampleDataParsed;
 }
 
-export function GetSampleProject(projectId: string): Project | null {
+export function GetSampleProjects(): ProjectArray {
+  return sampleDataParsed.projects;
+}
+
+export function GetSampleProject(
+  projectId: string | undefined
+): Project | null {
+  if (projectId === undefined) {
+    return null;
+  }
+
   let p = null;
   sampleDataParsed.projects.map((project) => {
     if (project.project_id === projectId) {
@@ -31,10 +41,18 @@ export function GetSampleProject(projectId: string): Project | null {
   return p;
 }
 
-export function GetSampleTables(projectId: string): TableArray {
+export function GetSampleTables(projectId: string | undefined): TableArray {
+  if (projectId === undefined) {
+    return [];
+  }
   return sampleDataParsed.project_tables[projectId];
 }
 
-export function GetSampleOperations(projectId: string): OperationArray {
+export function GetSampleOperations(
+  projectId: string | undefined
+): OperationArray {
+  if (projectId === undefined) {
+    return [];
+  }
   return sampleDataParsed.recent_operations[projectId];
 }
