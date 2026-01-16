@@ -1,5 +1,5 @@
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { StatusBadge } from "./StatusBadge";
+import { StatusBadge, type StatusBadgeVariant } from "./StatusBadge";
 import { Badge } from "@/components/ui/badge";
 import { TextLine } from "./TextLine";
 import type { Project } from "../backend/models/project";
@@ -31,7 +31,13 @@ export function ProjectOverviewCard({ project }: ProjectOverviewCardProps) {
       <Card className="bg-primary-foreground rounded-lg h-full border-0 p-4">
         <CardTitle className="text-2xl">
           {project?.project_name}
-          <StatusBadge variant={project?.status.toLowerCase()} />
+          <StatusBadge
+            variant={
+              project?.status
+                ? (project?.status.toLowerCase() as StatusBadgeVariant)
+                : "unknown"
+            }
+          />
         </CardTitle>
         <CardContent className="grid gap-2">
           <TextLine>

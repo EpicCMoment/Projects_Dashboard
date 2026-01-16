@@ -53,7 +53,7 @@ export const columns: ColumnDef<Table>[] = [
     cell: ({ row }) => {
       const rowData: Table = row.original;
 
-      let currentVersionTable: TableVersion;
+      let currentVersionTable: TableVersion = {} as TableVersion;
 
       rowData.versions.map((version) => {
         if (version.table_version_id === rowData.current_version_id) {

@@ -33,6 +33,10 @@ const statusBadgeVariants = {
     text: "Locked",
     style: "",
   },
+  unknown: {
+    text: "Unknown",
+    style: "",
+  },
 };
 
 const statusBadgeIcons = {
@@ -45,13 +49,16 @@ const statusBadgeIcons = {
   approved: <BadgeCheck />,
 
   locked: <LockKeyhole />,
+
+  unknown: <Search />,
 };
 
+export type StatusBadgeVariant = keyof typeof statusBadgeVariants;
 interface StatusBadgeProps {
-  variant: keyof typeof statusBadgeVariants | string | undefined;
+  variant: StatusBadgeVariant;
 }
 
-export function StatusBadge({ variant }: StatusBadgeProps) {
+export function StatusBadge({ variant = "unknown" }: StatusBadgeProps) {
   const variantConfig = statusBadgeVariants[variant];
 
   return (
