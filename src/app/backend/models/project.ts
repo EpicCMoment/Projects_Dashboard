@@ -27,3 +27,5 @@ export const ProjectSchema = z.object({
   created_at: z.string(),
   updated_at: z.string(),
 });
+
+export type Project = z.infer<typeof ProjectSchema>;

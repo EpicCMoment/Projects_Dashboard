@@ -3,12 +3,10 @@ import { cn } from "@/lib/utils";
 import {
   BadgeCheck,
   BadgeInfo,
-  BadgeQuestionMark,
   FileBadge,
   LockKeyhole,
   Search,
 } from "lucide-react";
-import { unknown } from "zod";
 
 const statusBadgeVariants = {
   draft: {
@@ -50,7 +48,7 @@ const statusBadgeIcons = {
 };
 
 interface StatusBadgeProps {
-  variant: keyof typeof statusBadgeVariants;
+  variant: keyof typeof statusBadgeVariants | string | undefined;
 }
 
 export function StatusBadge({ variant }: StatusBadgeProps) {

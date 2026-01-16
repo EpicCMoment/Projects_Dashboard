@@ -13,3 +13,19 @@ export const SampleSchema = z.object({
   governance: z.record(z.string(), GovernanceSchema),
   table_lineage: z.record(z.string(), z.array(TableLineageSchema)),
 });
+
+export function GetFormattedTime(dateString: string): string {
+  const dateObj = new Date(dateString);
+
+  try {
+    const formattedDate = new Intl.DateTimeFormat("en-US", {
+      dateStyle: "long",
+      timeStyle: "short",
+    }).format(dateObj);
+
+    return formattedDate;
+  } catch (err) {
+    console.log(err);
+    return "Error parsing the date";
+  }
+}

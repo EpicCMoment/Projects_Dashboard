@@ -139,12 +139,48 @@
           }
         ],
         "columns": [
-          { "column_id": "col-001", "column_name": "customer_id", "display_name": "Customer ID", "data_type": "string", "role": "lookup" },
-          { "column_id": "col-002", "column_name": "transaction_date", "display_name": "Transaction Date", "data_type": "datetime", "role": "time_id" },
-          { "column_id": "col-003", "column_name": "amount", "display_name": "Purchase Amount", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-004", "column_name": "category", "display_name": "Category", "data_type": "categorical", "role": "exog" },
-          { "column_id": "col-005", "column_name": "merchant_id", "display_name": "Merchant ID", "data_type": "string", "role": "not_used" },
-          { "column_id": "col-006", "column_name": "transaction_type", "display_name": "Transaction Type", "data_type": "categorical", "role": "exog" }
+          {
+            "column_id": "col-001",
+            "column_name": "customer_id",
+            "display_name": "Customer ID",
+            "data_type": "string",
+            "role": "lookup"
+          },
+          {
+            "column_id": "col-002",
+            "column_name": "transaction_date",
+            "display_name": "Transaction Date",
+            "data_type": "datetime",
+            "role": "time_id"
+          },
+          {
+            "column_id": "col-003",
+            "column_name": "amount",
+            "display_name": "Purchase Amount",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-004",
+            "column_name": "category",
+            "display_name": "Category",
+            "data_type": "categorical",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-005",
+            "column_name": "merchant_id",
+            "display_name": "Merchant ID",
+            "data_type": "string",
+            "role": "not_used"
+          },
+          {
+            "column_id": "col-006",
+            "column_name": "transaction_type",
+            "display_name": "Transaction Type",
+            "data_type": "categorical",
+            "role": "exog"
+          }
         ]
       },
       {
@@ -166,11 +202,41 @@
           }
         ],
         "columns": [
-          { "column_id": "col-007", "column_name": "customer_id", "display_name": "Customer ID", "data_type": "string", "role": "lookup" },
-          { "column_id": "col-008", "column_name": "age", "display_name": "Age", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-009", "column_name": "income", "display_name": "Annual Income", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-010", "column_name": "credit_score", "display_name": "Credit Score", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-011", "column_name": "employment_status", "display_name": "Employment Status", "data_type": "categorical", "role": "exog" }
+          {
+            "column_id": "col-007",
+            "column_name": "customer_id",
+            "display_name": "Customer ID",
+            "data_type": "string",
+            "role": "lookup"
+          },
+          {
+            "column_id": "col-008",
+            "column_name": "age",
+            "display_name": "Age",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-009",
+            "column_name": "income",
+            "display_name": "Annual Income",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-010",
+            "column_name": "credit_score",
+            "display_name": "Credit Score",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-011",
+            "column_name": "employment_status",
+            "display_name": "Employment Status",
+            "data_type": "categorical",
+            "role": "exog"
+          }
         ]
       },
       {
@@ -239,14 +305,62 @@
           }
         ],
         "columns": [
-          { "column_id": "col-012", "column_name": "customer_id", "display_name": "Customer ID", "data_type": "string", "role": "lookup" },
-          { "column_id": "col-013", "column_name": "avg_transaction", "display_name": "Avg Transaction", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-014", "column_name": "total_spend", "display_name": "Total Spend", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-015", "column_name": "transaction_count", "display_name": "Transaction Count", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-016", "column_name": "days_since_last_txn", "display_name": "Days Since Last Transaction", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-017", "column_name": "log_income", "display_name": "Log Income", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-018", "column_name": "income_to_spend_ratio", "display_name": "Income to Spend Ratio", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-019", "column_name": "default_flag", "display_name": "Default Flag", "data_type": "boolean", "role": "endog" }
+          {
+            "column_id": "col-012",
+            "column_name": "customer_id",
+            "display_name": "Customer ID",
+            "data_type": "string",
+            "role": "lookup"
+          },
+          {
+            "column_id": "col-013",
+            "column_name": "avg_transaction",
+            "display_name": "Avg Transaction",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-014",
+            "column_name": "total_spend",
+            "display_name": "Total Spend",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-015",
+            "column_name": "transaction_count",
+            "display_name": "Transaction Count",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-016",
+            "column_name": "days_since_last_txn",
+            "display_name": "Days Since Last Transaction",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-017",
+            "column_name": "log_income",
+            "display_name": "Log Income",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-018",
+            "column_name": "income_to_spend_ratio",
+            "display_name": "Income to Spend Ratio",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-019",
+            "column_name": "default_flag",
+            "display_name": "Default Flag",
+            "data_type": "boolean",
+            "role": "endog"
+          }
         ]
       }
     ],
@@ -270,11 +384,41 @@
           }
         ],
         "columns": [
-          { "column_id": "col-020", "column_name": "month_id", "display_name": "Month", "data_type": "datetime", "role": "time_id" },
-          { "column_id": "col-021", "column_name": "product_segment", "display_name": "Product Segment", "data_type": "categorical", "role": "lookup" },
-          { "column_id": "col-022", "column_name": "default_rate", "display_name": "Default Rate", "data_type": "numeric", "role": "endog" },
-          { "column_id": "col-023", "column_name": "loan_volume", "display_name": "Loan Volume", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-024", "column_name": "avg_loan_size", "display_name": "Average Loan Size", "data_type": "numeric", "role": "exog" }
+          {
+            "column_id": "col-020",
+            "column_name": "month_id",
+            "display_name": "Month",
+            "data_type": "datetime",
+            "role": "time_id"
+          },
+          {
+            "column_id": "col-021",
+            "column_name": "product_segment",
+            "display_name": "Product Segment",
+            "data_type": "categorical",
+            "role": "lookup"
+          },
+          {
+            "column_id": "col-022",
+            "column_name": "default_rate",
+            "display_name": "Default Rate",
+            "data_type": "numeric",
+            "role": "endog"
+          },
+          {
+            "column_id": "col-023",
+            "column_name": "loan_volume",
+            "display_name": "Loan Volume",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-024",
+            "column_name": "avg_loan_size",
+            "display_name": "Average Loan Size",
+            "data_type": "numeric",
+            "role": "exog"
+          }
         ]
       },
       {
@@ -296,11 +440,41 @@
           }
         ],
         "columns": [
-          { "column_id": "col-025", "column_name": "month_id", "display_name": "Month", "data_type": "datetime", "role": "time_id" },
-          { "column_id": "col-026", "column_name": "unemployment_rate", "display_name": "Unemployment Rate", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-027", "column_name": "gdp_growth", "display_name": "GDP Growth", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-028", "column_name": "interest_rate", "display_name": "Interest Rate", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-029", "column_name": "inflation_rate", "display_name": "Inflation Rate", "data_type": "numeric", "role": "exog" }
+          {
+            "column_id": "col-025",
+            "column_name": "month_id",
+            "display_name": "Month",
+            "data_type": "datetime",
+            "role": "time_id"
+          },
+          {
+            "column_id": "col-026",
+            "column_name": "unemployment_rate",
+            "display_name": "Unemployment Rate",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-027",
+            "column_name": "gdp_growth",
+            "display_name": "GDP Growth",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-028",
+            "column_name": "interest_rate",
+            "display_name": "Interest Rate",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-029",
+            "column_name": "inflation_rate",
+            "display_name": "Inflation Rate",
+            "data_type": "numeric",
+            "role": "exog"
+          }
         ]
       },
       {
@@ -358,14 +532,62 @@
           }
         ],
         "columns": [
-          { "column_id": "col-030", "column_name": "month_id", "display_name": "Month", "data_type": "datetime", "role": "time_id" },
-          { "column_id": "col-031", "column_name": "product_segment", "display_name": "Product Segment", "data_type": "categorical", "role": "lookup" },
-          { "column_id": "col-032", "column_name": "default_rate", "display_name": "Default Rate", "data_type": "numeric", "role": "endog" },
-          { "column_id": "col-033", "column_name": "lag_1_default", "display_name": "Default Rate (Lag 1)", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-034", "column_name": "lag_3_default", "display_name": "Default Rate (Lag 3)", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-035", "column_name": "moving_avg_6m", "display_name": "6-Month Moving Avg", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-036", "column_name": "unemployment_rate", "display_name": "Unemployment Rate", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-037", "column_name": "gdp_growth", "display_name": "GDP Growth", "data_type": "numeric", "role": "exog" }
+          {
+            "column_id": "col-030",
+            "column_name": "month_id",
+            "display_name": "Month",
+            "data_type": "datetime",
+            "role": "time_id"
+          },
+          {
+            "column_id": "col-031",
+            "column_name": "product_segment",
+            "display_name": "Product Segment",
+            "data_type": "categorical",
+            "role": "lookup"
+          },
+          {
+            "column_id": "col-032",
+            "column_name": "default_rate",
+            "display_name": "Default Rate",
+            "data_type": "numeric",
+            "role": "endog"
+          },
+          {
+            "column_id": "col-033",
+            "column_name": "lag_1_default",
+            "display_name": "Default Rate (Lag 1)",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-034",
+            "column_name": "lag_3_default",
+            "display_name": "Default Rate (Lag 3)",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-035",
+            "column_name": "moving_avg_6m",
+            "display_name": "6-Month Moving Avg",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-036",
+            "column_name": "unemployment_rate",
+            "display_name": "Unemployment Rate",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-037",
+            "column_name": "gdp_growth",
+            "display_name": "GDP Growth",
+            "data_type": "numeric",
+            "role": "exog"
+          }
         ]
       }
     ],
@@ -413,12 +635,48 @@
           }
         ],
         "columns": [
-          { "column_id": "col-038", "column_name": "customer_id", "display_name": "Customer ID", "data_type": "string", "role": "lookup" },
-          { "column_id": "col-039", "column_name": "tenure_months", "display_name": "Tenure (Months)", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-040", "column_name": "monthly_charges", "display_name": "Monthly Charges", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-041", "column_name": "total_charges", "display_name": "Total Charges", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-042", "column_name": "contract_type", "display_name": "Contract Type", "data_type": "categorical", "role": "exog" },
-          { "column_id": "col-043", "column_name": "churn_flag", "display_name": "Churned", "data_type": "boolean", "role": "endog" }
+          {
+            "column_id": "col-038",
+            "column_name": "customer_id",
+            "display_name": "Customer ID",
+            "data_type": "string",
+            "role": "lookup"
+          },
+          {
+            "column_id": "col-039",
+            "column_name": "tenure_months",
+            "display_name": "Tenure (Months)",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-040",
+            "column_name": "monthly_charges",
+            "display_name": "Monthly Charges",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-041",
+            "column_name": "total_charges",
+            "display_name": "Total Charges",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-042",
+            "column_name": "contract_type",
+            "display_name": "Contract Type",
+            "data_type": "categorical",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-043",
+            "column_name": "churn_flag",
+            "display_name": "Churned",
+            "data_type": "boolean",
+            "role": "endog"
+          }
         ]
       }
     ],
@@ -442,11 +700,41 @@
           }
         ],
         "columns": [
-          { "column_id": "col-044", "column_name": "transaction_id", "display_name": "Transaction ID", "data_type": "string", "role": "lookup" },
-          { "column_id": "col-045", "column_name": "timestamp", "display_name": "Timestamp", "data_type": "datetime", "role": "time_id" },
-          { "column_id": "col-046", "column_name": "amount", "display_name": "Amount", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-047", "column_name": "merchant_category", "display_name": "Merchant Category", "data_type": "categorical", "role": "exog" },
-          { "column_id": "col-048", "column_name": "is_fraud", "display_name": "Fraud Flag", "data_type": "boolean", "role": "endog" }
+          {
+            "column_id": "col-044",
+            "column_name": "transaction_id",
+            "display_name": "Transaction ID",
+            "data_type": "string",
+            "role": "lookup"
+          },
+          {
+            "column_id": "col-045",
+            "column_name": "timestamp",
+            "display_name": "Timestamp",
+            "data_type": "datetime",
+            "role": "time_id"
+          },
+          {
+            "column_id": "col-046",
+            "column_name": "amount",
+            "display_name": "Amount",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-047",
+            "column_name": "merchant_category",
+            "display_name": "Merchant Category",
+            "data_type": "categorical",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-048",
+            "column_name": "is_fraud",
+            "display_name": "Fraud Flag",
+            "data_type": "boolean",
+            "role": "endog"
+          }
         ]
       }
     ],
@@ -470,11 +758,41 @@
           }
         ],
         "columns": [
-          { "column_id": "col-049", "column_name": "claim_id", "display_name": "Claim ID", "data_type": "string", "role": "lookup" },
-          { "column_id": "col-050", "column_name": "policy_id", "display_name": "Policy ID", "data_type": "string", "role": "lookup" },
-          { "column_id": "col-051", "column_name": "claim_date", "display_name": "Claim Date", "data_type": "datetime", "role": "time_id" },
-          { "column_id": "col-052", "column_name": "claim_amount", "display_name": "Claim Amount", "data_type": "numeric", "role": "endog" },
-          { "column_id": "col-053", "column_name": "claim_type", "display_name": "Claim Type", "data_type": "categorical", "role": "exog" }
+          {
+            "column_id": "col-049",
+            "column_name": "claim_id",
+            "display_name": "Claim ID",
+            "data_type": "string",
+            "role": "lookup"
+          },
+          {
+            "column_id": "col-050",
+            "column_name": "policy_id",
+            "display_name": "Policy ID",
+            "data_type": "string",
+            "role": "lookup"
+          },
+          {
+            "column_id": "col-051",
+            "column_name": "claim_date",
+            "display_name": "Claim Date",
+            "data_type": "datetime",
+            "role": "time_id"
+          },
+          {
+            "column_id": "col-052",
+            "column_name": "claim_amount",
+            "display_name": "Claim Amount",
+            "data_type": "numeric",
+            "role": "endog"
+          },
+          {
+            "column_id": "col-053",
+            "column_name": "claim_type",
+            "display_name": "Claim Type",
+            "data_type": "categorical",
+            "role": "exog"
+          }
         ]
       },
       {
@@ -531,12 +849,48 @@
           }
         ],
         "columns": [
-          { "column_id": "col-054", "column_name": "policy_id", "display_name": "Policy ID", "data_type": "string", "role": "lookup" },
-          { "column_id": "col-055", "column_name": "premium_amount", "display_name": "Premium Amount", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-056", "column_name": "coverage_amount", "display_name": "Coverage Amount", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-057", "column_name": "policy_age_months", "display_name": "Policy Age (Months)", "data_type": "numeric", "role": "exog" },
-          { "column_id": "col-058", "column_name": "claim_probability", "display_name": "Claim Probability", "data_type": "numeric", "role": "endog" },
-          { "column_id": "col-059", "column_name": "expected_claim_amount", "display_name": "Expected Claim Amount", "data_type": "numeric", "role": "endog" }
+          {
+            "column_id": "col-054",
+            "column_name": "policy_id",
+            "display_name": "Policy ID",
+            "data_type": "string",
+            "role": "lookup"
+          },
+          {
+            "column_id": "col-055",
+            "column_name": "premium_amount",
+            "display_name": "Premium Amount",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-056",
+            "column_name": "coverage_amount",
+            "display_name": "Coverage Amount",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-057",
+            "column_name": "policy_age_months",
+            "display_name": "Policy Age (Months)",
+            "data_type": "numeric",
+            "role": "exog"
+          },
+          {
+            "column_id": "col-058",
+            "column_name": "claim_probability",
+            "display_name": "Claim Probability",
+            "data_type": "numeric",
+            "role": "endog"
+          },
+          {
+            "column_id": "col-059",
+            "column_name": "expected_claim_amount",
+            "display_name": "Expected Claim Amount",
+            "data_type": "numeric",
+            "role": "endog"
+          }
         ]
       }
     ]
@@ -558,7 +912,11 @@
         "operation_log_id": "op-001-009",
         "operation_type": "column_action",
         "operation_name": "create_ratio",
-        "input_parameters": { "numerator": "income", "denominator": "total_spend", "output_column": "income_to_spend_ratio" },
+        "input_parameters": {
+          "numerator": "income",
+          "denominator": "total_spend",
+          "output_column": "income_to_spend_ratio"
+        },
         "executed_by": { "user_id": "user-001", "name": "John Smith" },
         "execution_timestamp": "2025-06-15T14:15:00Z",
         "affected_table": "customer_features",
@@ -568,7 +926,10 @@
         "operation_log_id": "op-001-008",
         "operation_type": "column_action",
         "operation_name": "calculate_days_since",
-        "input_parameters": { "date_column": "last_transaction_date", "output_column": "days_since_last_txn" },
+        "input_parameters": {
+          "date_column": "last_transaction_date",
+          "output_column": "days_since_last_txn"
+        },
         "executed_by": { "user_id": "user-001", "name": "John Smith" },
         "execution_timestamp": "2025-06-10T10:00:00Z",
         "affected_table": "customer_features",
@@ -588,7 +949,12 @@
         "operation_log_id": "op-001-006",
         "operation_type": "column_action",
         "operation_name": "aggregate",
-        "input_parameters": { "function": "sum", "group_by": "customer_id", "column": "amount", "output_column": "total_spend" },
+        "input_parameters": {
+          "function": "sum",
+          "group_by": "customer_id",
+          "column": "amount",
+          "output_column": "total_spend"
+        },
         "executed_by": { "user_id": "user-001", "name": "John Smith" },
         "execution_timestamp": "2025-01-25T11:30:00Z",
         "affected_table": "customer_features",
@@ -598,7 +964,12 @@
         "operation_log_id": "op-001-005",
         "operation_type": "column_action",
         "operation_name": "aggregate",
-        "input_parameters": { "function": "mean", "group_by": "customer_id", "column": "amount", "output_column": "avg_transaction" },
+        "input_parameters": {
+          "function": "mean",
+          "group_by": "customer_id",
+          "column": "amount",
+          "output_column": "avg_transaction"
+        },
         "executed_by": { "user_id": "user-001", "name": "John Smith" },
         "execution_timestamp": "2025-01-25T11:00:00Z",
         "affected_table": "customer_features",
@@ -608,7 +979,11 @@
         "operation_log_id": "op-001-004",
         "operation_type": "table_operation",
         "operation_name": "merge_tables",
-        "input_parameters": { "join_type": "inner", "join_key": "customer_id", "tables": ["customer_transactions", "customer_demographics"] },
+        "input_parameters": {
+          "join_type": "inner",
+          "join_key": "customer_id",
+          "tables": ["customer_transactions", "customer_demographics"]
+        },
         "executed_by": { "user_id": "user-001", "name": "John Smith" },
         "execution_timestamp": "2025-01-23T09:00:00Z",
         "affected_table": "customer_features",
@@ -628,7 +1003,10 @@
         "operation_log_id": "op-001-002",
         "operation_type": "table_action",
         "operation_name": "upload_data",
-        "input_parameters": { "source": "customer_demographics.csv", "rows": 75000 },
+        "input_parameters": {
+          "source": "customer_demographics.csv",
+          "rows": 75000
+        },
         "executed_by": { "user_id": "user-001", "name": "John Smith" },
         "execution_timestamp": "2025-01-22T10:15:00Z",
         "affected_table": "customer_demographics",
@@ -638,7 +1016,10 @@
         "operation_log_id": "op-001-001",
         "operation_type": "table_action",
         "operation_name": "upload_data",
-        "input_parameters": { "source": "customer_transactions.csv", "rows": 150000 },
+        "input_parameters": {
+          "source": "customer_transactions.csv",
+          "rows": 150000
+        },
         "executed_by": { "user_id": "user-001", "name": "John Smith" },
         "execution_timestamp": "2025-01-22T10:00:00Z",
         "affected_table": "customer_transactions",
@@ -650,7 +1031,11 @@
         "operation_log_id": "op-002-005",
         "operation_type": "column_action",
         "operation_name": "create_lag",
-        "input_parameters": { "column": "default_rate", "periods": 3, "output_column": "lag_3_default" },
+        "input_parameters": {
+          "column": "default_rate",
+          "periods": 3,
+          "output_column": "lag_3_default"
+        },
         "executed_by": { "user_id": "user-003", "name": "Emily Rodriguez" },
         "execution_timestamp": "2025-06-08T16:00:00Z",
         "affected_table": "forecast_dataset",
@@ -660,7 +1045,10 @@
         "operation_log_id": "op-002-004",
         "operation_type": "table_action",
         "operation_name": "remove_outliers",
-        "input_parameters": { "method": "iqr", "columns": ["default_rate", "loan_volume"] },
+        "input_parameters": {
+          "method": "iqr",
+          "columns": ["default_rate", "loan_volume"]
+        },
         "executed_by": { "user_id": "user-003", "name": "Emily Rodriguez" },
         "execution_timestamp": "2025-01-10T11:00:00Z",
         "affected_table": "forecast_dataset",
@@ -670,7 +1058,11 @@
         "operation_log_id": "op-002-003",
         "operation_type": "column_action",
         "operation_name": "moving_average",
-        "input_parameters": { "column": "default_rate", "window": 6, "output_column": "moving_avg_6m" },
+        "input_parameters": {
+          "column": "default_rate",
+          "window": 6,
+          "output_column": "moving_avg_6m"
+        },
         "executed_by": { "user_id": "user-003", "name": "Emily Rodriguez" },
         "execution_timestamp": "2024-12-01T14:30:00Z",
         "affected_table": "forecast_dataset",
@@ -686,7 +1078,11 @@
           "approval_id": "appr-001",
           "approval_type": "DevCompletion",
           "status": "Pending",
-          "approver": { "user_id": "user-002", "name": "Sarah Chen", "role": "Governance Manager" },
+          "approver": {
+            "user_id": "user-002",
+            "name": "Sarah Chen",
+            "role": "Governance Manager"
+          },
           "requested_by": { "user_id": "user-001", "name": "John Smith" },
           "created_at": "2025-06-15T15:00:00Z",
           "comments": null
@@ -702,8 +1098,16 @@
         "assigned_to": { "user_id": "user-002", "name": "Sarah Chen" }
       },
       "stakeholders": [
-        { "user_id": "user-008", "name": "Michael Brown", "role": "Business Owner" },
-        { "user_id": "user-002", "name": "Sarah Chen", "role": "Governance Manager" },
+        {
+          "user_id": "user-008",
+          "name": "Michael Brown",
+          "role": "Business Owner"
+        },
+        {
+          "user_id": "user-002",
+          "name": "Sarah Chen",
+          "role": "Governance Manager"
+        },
         { "user_id": "user-001", "name": "John Smith", "role": "Developer" }
       ]
     },
@@ -713,7 +1117,11 @@
           "approval_id": "appr-002",
           "approval_type": "DevCompletion",
           "status": "Approved",
-          "approver": { "user_id": "user-002", "name": "Sarah Chen", "role": "Governance Manager" },
+          "approver": {
+            "user_id": "user-002",
+            "name": "Sarah Chen",
+            "role": "Governance Manager"
+          },
           "requested_by": { "user_id": "user-003", "name": "Emily Rodriguez" },
           "created_at": "2025-06-08T17:00:00Z",
           "approved_at": "2025-06-09T10:30:00Z",
@@ -723,7 +1131,11 @@
           "approval_id": "appr-003",
           "approval_type": "ValidationStart",
           "status": "Pending",
-          "approver": { "user_id": "user-009", "name": "Robert Kim", "role": "Validation Manager" },
+          "approver": {
+            "user_id": "user-009",
+            "name": "Robert Kim",
+            "role": "Validation Manager"
+          },
           "requested_by": { "user_id": "user-002", "name": "Sarah Chen" },
           "created_at": "2025-06-09T11:00:00Z",
           "comments": null
@@ -739,9 +1151,21 @@
         "assigned_to": { "user_id": "user-002", "name": "Sarah Chen" }
       },
       "stakeholders": [
-        { "user_id": "user-010", "name": "Lisa Wang", "role": "Business Owner" },
-        { "user_id": "user-002", "name": "Sarah Chen", "role": "Governance Manager" },
-        { "user_id": "user-003", "name": "Emily Rodriguez", "role": "Developer" }
+        {
+          "user_id": "user-010",
+          "name": "Lisa Wang",
+          "role": "Business Owner"
+        },
+        {
+          "user_id": "user-002",
+          "name": "Sarah Chen",
+          "role": "Governance Manager"
+        },
+        {
+          "user_id": "user-003",
+          "name": "Emily Rodriguez",
+          "role": "Developer"
+        }
       ]
     },
     "proj-003": {
@@ -750,7 +1174,11 @@
           "approval_id": "appr-004",
           "approval_type": "DevCompletion",
           "status": "Approved",
-          "approver": { "user_id": "user-005", "name": "Jennifer Walsh", "role": "Governance Manager" },
+          "approver": {
+            "user_id": "user-005",
+            "name": "Jennifer Walsh",
+            "role": "Governance Manager"
+          },
           "approved_at": "2025-03-15T14:00:00Z",
           "comments": "Approved for validation"
         },
@@ -758,7 +1186,11 @@
           "approval_id": "appr-005",
           "approval_type": "ValidationCompletion",
           "status": "Approved",
-          "approver": { "user_id": "user-009", "name": "Robert Kim", "role": "Validation Manager" },
+          "approver": {
+            "user_id": "user-009",
+            "name": "Robert Kim",
+            "role": "Validation Manager"
+          },
           "approved_at": "2025-05-10T16:30:00Z",
           "comments": "Validation complete. Model performs within acceptable limits."
         },
@@ -766,7 +1198,11 @@
           "approval_id": "appr-006",
           "approval_type": "ProductionApproval",
           "status": "Approved",
-          "approver": { "user_id": "user-011", "name": "Thomas Anderson", "role": "Business Stakeholder" },
+          "approver": {
+            "user_id": "user-011",
+            "name": "Thomas Anderson",
+            "role": "Business Stakeholder"
+          },
           "approved_at": "2025-05-20T11:00:00Z",
           "comments": "Approved for production deployment"
         }
@@ -782,8 +1218,16 @@
         "completed_at": "2025-05-18T09:00:00Z"
       },
       "stakeholders": [
-        { "user_id": "user-011", "name": "Thomas Anderson", "role": "Business Owner" },
-        { "user_id": "user-005", "name": "Jennifer Walsh", "role": "Governance Manager" },
+        {
+          "user_id": "user-011",
+          "name": "Thomas Anderson",
+          "role": "Business Owner"
+        },
+        {
+          "user_id": "user-005",
+          "name": "Jennifer Walsh",
+          "role": "Governance Manager"
+        },
         { "user_id": "user-004", "name": "Michael Chen", "role": "Developer" }
       ]
     },
@@ -800,7 +1244,11 @@
           "approval_id": "appr-007",
           "approval_type": "DevCompletion",
           "status": "Approved",
-          "approver": { "user_id": "user-005", "name": "Jennifer Walsh", "role": "Governance Manager" },
+          "approver": {
+            "user_id": "user-005",
+            "name": "Jennifer Walsh",
+            "role": "Governance Manager"
+          },
           "approved_at": "2024-08-20T10:00:00Z",
           "comments": "Approved"
         },
@@ -808,7 +1256,11 @@
           "approval_id": "appr-008",
           "approval_type": "ValidationCompletion",
           "status": "Approved",
-          "approver": { "user_id": "user-009", "name": "Robert Kim", "role": "Validation Manager" },
+          "approver": {
+            "user_id": "user-009",
+            "name": "Robert Kim",
+            "role": "Validation Manager"
+          },
           "approved_at": "2024-12-15T14:00:00Z",
           "comments": "Validation passed"
         },
@@ -816,7 +1268,11 @@
           "approval_id": "appr-009",
           "approval_type": "ProductionApproval",
           "status": "Approved",
-          "approver": { "user_id": "user-012", "name": "Karen Miller", "role": "Business Stakeholder" },
+          "approver": {
+            "user_id": "user-012",
+            "name": "Karen Miller",
+            "role": "Business Stakeholder"
+          },
           "approved_at": "2025-04-10T11:00:00Z",
           "comments": "Approved for production"
         }
@@ -832,8 +1288,16 @@
         "completed_at": "2025-04-05T16:00:00Z"
       },
       "stakeholders": [
-        { "user_id": "user-012", "name": "Karen Miller", "role": "Business Owner" },
-        { "user_id": "user-005", "name": "Jennifer Walsh", "role": "Governance Manager" },
+        {
+          "user_id": "user-012",
+          "name": "Karen Miller",
+          "role": "Business Owner"
+        },
+        {
+          "user_id": "user-005",
+          "name": "Jennifer Walsh",
+          "role": "Governance Manager"
+        },
         { "user_id": "user-007", "name": "Amanda Foster", "role": "Developer" }
       ]
     }
@@ -841,17 +1305,37 @@
 
   "table_lineage": {
     "proj-001": [
-      { "child_table": "customer_features", "parent_table": "customer_transactions", "parent_type": "source_dataset" },
-      { "child_table": "customer_features", "parent_table": "customer_demographics", "parent_type": "source_dataset" }
+      {
+        "child_table": "customer_features",
+        "parent_table": "customer_transactions",
+        "parent_type": "source_dataset"
+      },
+      {
+        "child_table": "customer_features",
+        "parent_table": "customer_demographics",
+        "parent_type": "source_dataset"
+      }
     ],
     "proj-002": [
-      { "child_table": "forecast_dataset", "parent_table": "monthly_defaults", "parent_type": "source_dataset" },
-      { "child_table": "forecast_dataset", "parent_table": "economic_indicators", "parent_type": "source_dataset" }
+      {
+        "child_table": "forecast_dataset",
+        "parent_table": "monthly_defaults",
+        "parent_type": "source_dataset"
+      },
+      {
+        "child_table": "forecast_dataset",
+        "parent_table": "economic_indicators",
+        "parent_type": "source_dataset"
+      }
     ],
     "proj-003": [],
     "proj-004": [],
     "proj-005": [
-      { "child_table": "policy_features", "parent_table": "claim_history", "parent_type": "source_dataset" }
+      {
+        "child_table": "policy_features",
+        "parent_table": "claim_history",
+        "parent_type": "source_dataset"
+      }
     ]
   }
 }

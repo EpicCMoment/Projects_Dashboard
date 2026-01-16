@@ -28,3 +28,8 @@ export const TableSchema = z.object({
   versions: z.array(TableVersionSchema),
   columns: z.array(ColumnSchema),
 });
+
+export const TableArraySchema = z.array(TableSchema);
+export type TableArray = z.infer<typeof TableArraySchema>;
+export type Table = z.infer<typeof TableSchema>;
+export type TableVersion = z.infer<typeof TableVersionSchema>;
