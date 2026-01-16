@@ -6,6 +6,7 @@ import { Content } from "./content/Content";
 
 interface LayoutProps {
   children: ReactNode;
+  variant: "grid" | "flex";
 }
 
 /**
@@ -17,12 +18,12 @@ interface LayoutProps {
  * on the right. `children` of the Layout is displayed in the main
  * content.
  */
-export function Layout({ children }: LayoutProps) {
+export function Layout({ children, variant = "grid" }: LayoutProps) {
   return (
     <SidebarProvider>
       <AppSidebar />
 
-      <Content>{children}</Content>
+      <Content variant={variant}>{children}</Content>
     </SidebarProvider>
   );
 }
