@@ -29,9 +29,9 @@ export function AppSGSettings() {
               align="start"
               className="w-[--radix-popper-anchor-width]"
             >
-              <DropdownMenuItem>Audio</DropdownMenuItem>
-              <DropdownMenuItem>Video</DropdownMenuItem>
-              <DropdownMenuItem>Misc</DropdownMenuItem>
+              <DropdownMenuItem>
+                <div className="text-destructive">WIP</div>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </SidebarMenuItem>

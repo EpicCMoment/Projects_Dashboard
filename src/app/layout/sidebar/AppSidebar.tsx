@@ -24,11 +24,14 @@ export function AppSidebar() {
       <SidebarHeader>
         <DropdownMenu>
           <DropdownMenuTrigger>
-            <div>
-              <Avatar>
-                <AvatarImage src="https://github.com/shadcn.png" />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
+            <div className="items-center overflow-clip">
+              <div className="flex hover:bg-accent rounded-full overflow-hidden items-center">
+                <Avatar>
+                  <AvatarImage src="https://github.com/shadcn.png" />
+                  <AvatarFallback>CN</AvatarFallback>
+                </Avatar>
+                <div className="flex items-center mx-2">DefaultUser_007</div>
+              </div>
             </div>
           </DropdownMenuTrigger>
           <DropdownMenuContent sideOffset={10}>
