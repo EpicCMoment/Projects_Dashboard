@@ -5,8 +5,10 @@ import { Layout } from "../layout/Layout";
 }
 export function HomePage() {
   return (
-    <Layout>
-      <div></div>
+    <Layout variant="flex">
+      <div>
+        Please select a project from the sidebar or click <b>Projects</b>.
+      </div>
     </Layout>
   );
 }

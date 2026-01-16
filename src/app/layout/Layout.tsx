@@ -6,7 +6,7 @@ import { Content } from "./content/Content";
 
 interface LayoutProps {
   children: ReactNode;
-  variant: "grid" | "flex";
+  variant?: "grid" | "flex";
 }
 
 /**

@@ -19,7 +19,7 @@ export function OverviewPage() {
   const operations = GetSampleOperations(projectId);
 
   return (
-    <Layout>
+    <Layout variant="grid">
       <ProjectOverviewCard project={project} />
       <ProjectTablesCard tables={tables} />
       <RecentOperationsCard operations={operations} />
