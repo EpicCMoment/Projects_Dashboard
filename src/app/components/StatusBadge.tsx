@@ -11,27 +11,27 @@ import {
 const statusBadgeVariants = {
   draft: {
     text: "Draft",
-    style: "",
+    style: "bg-gray-400",
   },
 
   active: {
     text: "Active",
-    style: "",
+    style: "bg-green-400",
   },
 
   review: {
     text: "Review",
-    style: "",
+    style: "bg-amber-500",
   },
 
   approved: {
     text: "Approved",
-    style: "",
+    style: "bg-blue-400",
   },
 
   locked: {
     text: "Locked",
-    style: "",
+    style: "bg-red-600 text-white",
   },
   unknown: {
     text: "Unknown",
