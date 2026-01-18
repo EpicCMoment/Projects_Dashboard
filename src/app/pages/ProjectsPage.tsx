@@ -1,4 +1,4 @@
-import { ProjectsListingCard } from "../components/Cards/ProjectsListingCard";
+import { ProjectsListingCard } from "../components/Cards/ProjectsListingCard/ProjectsListingCard";
 import { Layout } from "../layout/Layout";
 
 export function ProjectsPage() {

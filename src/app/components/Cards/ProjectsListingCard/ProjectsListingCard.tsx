@@ -1,6 +1,6 @@
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { GetSampleProjects } from "../../backend/Backend";
-import { TextLine } from "../Utilities/TextLine";
+import { GetSampleProjects } from "@/app/backend/Backend";
+import { TextLine } from "@/app/components/Utilities/TextLine";
 
 export function ProjectsListingCard() {
   return (
