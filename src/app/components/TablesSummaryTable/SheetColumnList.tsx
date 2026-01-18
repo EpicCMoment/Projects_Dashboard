@@ -42,7 +42,12 @@ export function SheetColumnList({ data }: SheetColumnListProps) {
             className="m-2 grid grid-cols-2 border hover:bg-accent"
           >
             <div className="flex m-auto p-2">
-              <Badge className={cn("text-3sm", columnRoleToStyle[column.role])}>
+              <Badge
+                className={cn(
+                  "text-3sm",
+                  columnRoleToStyle[column.role as ColumnRole],
+                )}
+              >
                 {column.role
                   .replace("_", " ")
                   .split(" ")
