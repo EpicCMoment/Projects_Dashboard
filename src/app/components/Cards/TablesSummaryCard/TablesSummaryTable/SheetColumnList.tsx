@@ -32,8 +32,8 @@ export function SheetColumnList({ data }: SheetColumnListProps) {
         <SidebarSeparator className="m-0 p-0" />
       </div>
       <div className="m-2 grid grid-cols-2">
-        <div className="text-center p-2 text-xl">Role</div>
         <div className="text-center p-2 text-xl">Name</div>
+        <div className="text-center p-2 text-xl">Role</div>
       </div>
       {data.columns.map((column) => {
         return (
@@ -41,6 +41,7 @@ export function SheetColumnList({ data }: SheetColumnListProps) {
             key={column.column_id}
             className="m-2 grid grid-cols-2 border hover:bg-accent"
           >
+            <div className="text-center p-2">{column.display_name}</div>
             <div className="flex m-auto p-2">
               <Badge
                 className={cn(
@@ -57,7 +58,6 @@ export function SheetColumnList({ data }: SheetColumnListProps) {
                   .join(" ")}
               </Badge>
             </div>
-            <div className="text-center p-2">{column.display_name}</div>
           </div>
         );
       })}

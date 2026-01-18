@@ -35,3 +35,8 @@ export const GovernanceSchema = z.object({
   compliance_checklist: ComplienceChecklistSchema.nullable(),
   stakeholders: z.array(StakeholderSchema),
 });
+
+export type Governance = z.infer<typeof GovernanceSchema>;
+export type Stakeholder = z.infer<typeof StakeholderSchema>;
+export type Approval = z.infer<typeof ApprovalSchema>;
+export type Approver = z.infer<typeof ApproverSchema>;

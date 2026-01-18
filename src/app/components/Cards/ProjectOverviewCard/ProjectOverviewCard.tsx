@@ -1,9 +1,9 @@
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { StatusBadge, type StatusBadgeVariant } from "./StatusBadge";
 import { Badge } from "@/components/ui/badge";
-import { TextLine } from "./TextLine";
-import type { Project } from "../backend/models/project";
-import { GetFormattedTime } from "../backend/models/sample-wrapper";
+import { TextLine } from "../../Utilities/TextLine";
+import type { Project } from "../../../backend/models/project";
+import { GetFormattedTime } from "../../../backend/models/sample-wrapper";
 
 interface ProjectOverviewCardProps {
   project: Project | null;

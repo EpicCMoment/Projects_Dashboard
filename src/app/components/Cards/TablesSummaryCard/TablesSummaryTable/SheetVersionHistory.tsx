@@ -1,5 +1,5 @@
 import type { Table } from "@/app/backend/models/table";
-import { TextLine } from "../TextLine";
+import { TextLine } from "@/app/components/Utilities/TextLine";
 import {
   HoverCard,
   HoverCardContent,
@@ -31,7 +31,7 @@ export function SheetVersionHistory({ data }: SheetVersionHistoryProps) {
     return (
       <HoverCard key={version.table_version_id} openDelay={100} closeDelay={50}>
         <HoverCardTrigger>
-          <div className="m-2">
+          <div className="m-4">
             <TextLine>
               <div>{version.table_version_id}</div>
             </TextLine>

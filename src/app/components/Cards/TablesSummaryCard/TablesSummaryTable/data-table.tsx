@@ -102,7 +102,7 @@ export function DataTable<TData, TValue>({
               </TableRow>
             )}
 
-            <SheetContent className="w-1/4 min-w-100">
+            <SheetContent className="w-1/4 min-w-100 overflow-scroll">
               <div>
                 <SheetHeader>
                   <SheetTitle className="text-4xl">Table Details</SheetTitle>

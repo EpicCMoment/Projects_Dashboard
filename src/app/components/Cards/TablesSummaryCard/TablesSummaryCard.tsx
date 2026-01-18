@@ -1,5 +1,5 @@
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import type { TableArray } from "../backend/models/table";
+import type { TableArray } from "@/app/backend/models/table";
 import { TablesSummaryTable } from "./TablesSummaryTable/TablesSummaryTable";
 
 interface TablesSummaryCardProps {

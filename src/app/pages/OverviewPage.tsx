@@ -1,4 +1,4 @@
-import { ProjectOverviewCard } from "../components/ProjectOverviewCard";
+import { ProjectOverviewCard } from "../components/Cards/ProjectOverviewCard/ProjectOverviewCard";
 import { Layout } from "../layout/Layout";
 
 import {
@@ -6,9 +6,9 @@ import {
   GetSampleOperations,
   GetSampleTables,
 } from "../backend/Backend";
-import { ProjectTablesCard } from "../components/TablesSummaryCard";
-import { RecentOperationsCard } from "../components/RecentOperationsCard";
+import { RecentOperationsCard } from "../components/Cards/RecentOperationsCard/RecentOperationsCard";
 import { useParams } from "react-router";
+import { ProjectTablesCard } from "@/app/components/Cards/TablesSummaryCard/TablesSummaryCard";
 
 export function OverviewPage() {
   const params = useParams();

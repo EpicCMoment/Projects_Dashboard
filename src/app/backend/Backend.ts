@@ -4,6 +4,7 @@ import sampleDataRaw from "./sample_data.json";
 import { type Project, type ProjectArray } from "./models/project";
 import { type TableArray } from "./models/table";
 import type { OperationArray } from "./models/operation";
+import type { Governance } from "./models/governance";
 
 // because SampleSchema is an object, we need to infer its type
 type SampleDataType = z.infer<typeof SampleSchema>;
@@ -25,7 +26,7 @@ export function GetSampleProjects(): ProjectArray {
 }
 
 export function GetSampleProject(
-  projectId: string | undefined
+  projectId: string | undefined,
 ): Project | null {
   if (projectId === undefined) {
     return null;
@@ -49,10 +50,26 @@ export function GetSampleTables(projectId: string | undefined): TableArray {
 }
 
 export function GetSampleOperations(
-  projectId: string | undefined
+  projectId: string | undefined,
 ): OperationArray {
   if (projectId === undefined) {
     return [];
   }
   return sampleDataParsed.recent_operations[projectId];
+}
+
+export function GetSampleGovernance(
+  projectId: string | undefined,
+): Governance | null {
+  if (projectId === undefined) {
+    return null;
+  }
+
+  const g = sampleDataParsed.governance[projectId];
+
+  if (g === undefined) {
+    return null;
+  }
+
+  return g;
 }
