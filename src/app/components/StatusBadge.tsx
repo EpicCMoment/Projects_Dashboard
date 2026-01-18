@@ -21,7 +21,7 @@ const statusBadgeVariants = {
 
   review: {
     text: "Review",
-    style: "bg-amber-500",
+    style: "bg-yellow-500",
   },
 
   approved: {
