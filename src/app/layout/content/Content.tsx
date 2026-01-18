@@ -12,7 +12,7 @@ export function Content({ children, variant }: ContentProps) {
       {variant === "grid" ? (
         <main className="w-full">
           <Navbar />
-          <div className="grid grid-cols-1 2xl:grid-cols-3 gap-4 m-2 grow border-0">
+          <div className="grid grid-cols-1 2xl:grid-cols-3 gap-y-4 2xl:gap-4 m-2 grow border-0">
             {children}
           </div>
         </main>
