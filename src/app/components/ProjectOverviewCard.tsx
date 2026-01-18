@@ -48,7 +48,11 @@ export function ProjectOverviewCard({ project }: ProjectOverviewCardProps) {
             {" "}
             Owner:{" "}
             <b>
-              {project?.owner ? <>{project?.owner.name}</> : <>Not Assigned</>}{" "}
+              {project?.owner ? (
+                <>{project?.owner.name}</>
+              ) : (
+                <>Not Assigned</>
+              )}{" "}
             </b>
           </TextLine>
 

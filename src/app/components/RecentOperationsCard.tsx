@@ -10,7 +10,7 @@ export function RecentOperationsCard({
   operations,
 }: RecentOperationsCardProps) {
   return (
-    <Card className="bg-primary-foreground rounded-lg min-h-100 h-full border-0 p-4 col-span-2">
+    <Card className="bg-primary-foreground rounded-lg border-0 p-4 col-span-2 h-fit">
       <CardTitle className="text-2xl">Recent Operations</CardTitle>
       <CardContent className="grid gap-2">
         <RecentOperationsTable operations={operations} />

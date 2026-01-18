@@ -1,6 +1,6 @@
 import type { Table, TableVersion } from "@/app/backend/models/table";
 import { type ColumnDef } from "@tanstack/react-table";
-import { BadgeCheck, BadgeX } from "lucide-react";
+import { GetCheckpointBadge } from "./utils";
 
 export const columns: ColumnDef<Table>[] = [
   {
@@ -9,20 +9,17 @@ export const columns: ColumnDef<Table>[] = [
     accessorFn: (data) => data.versions.length > 0,
     cell: ({ row }) => {
       const rowData: Table = row.original;
+      const currentTableVersionId = rowData.current_version_id;
 
-      if (rowData.versions.length > 0) {
-        return (
-          <div className="flex justify-center">
-            <BadgeCheck />
-          </div>
-        );
-      }
+      let currentTableVersion: TableVersion = {} as TableVersion;
 
-      return (
-        <div className="flex justify-center">
-          <BadgeX />
-        </div>
-      );
+      rowData.versions.map((version) => {
+        if (version.table_version_id === currentTableVersionId) {
+          currentTableVersion = version;
+        }
+      });
+
+      return GetCheckpointBadge(currentTableVersion);
     },
   },
   {
@@ -47,9 +44,31 @@ export const columns: ColumnDef<Table>[] = [
     accessorKey: "current_version_id",
     header: "Current Version",
   },
+
+  {
+    id: "col_count",
+    header: "Columns",
+    cell: ({ row }) => {
+      const rowData: Table = row.original;
+
+      let currentVersionTable: TableVersion = {} as TableVersion;
+
+      rowData.versions.map((version) => {
+        if (version.table_version_id === rowData.current_version_id) {
+          currentVersionTable = version;
+        }
+      });
+
+      if (currentVersionTable === undefined) {
+        return null;
+      }
+
+      return currentVersionTable.column_count;
+    },
+  },
   {
     id: "row_count",
-    header: "Row Count",
+    header: "Rows",
     cell: ({ row }) => {
       const rowData: Table = row.original;
 

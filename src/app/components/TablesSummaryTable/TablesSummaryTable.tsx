@@ -1,5 +1,5 @@
 import { columns } from "./columns";
-import { DataTable } from "../../../components/ui/data-table";
+import { DataTable } from "./data-table";
 import type { TableArray } from "@/app/backend/models/table";
 
 interface TablesSummaryTableProps {
