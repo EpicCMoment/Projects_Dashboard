@@ -5,3 +5,6 @@ export const TableLineageSchema = z.object({
   parent_table: z.string(),
   parent_type: z.string(),
 });
+
+export type TableLineage = z.infer<typeof TableLineageSchema>;
+export type TableLineageArray = TableLineage[];

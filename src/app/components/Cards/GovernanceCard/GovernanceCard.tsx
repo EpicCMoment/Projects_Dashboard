@@ -30,7 +30,7 @@ export function GovernanceCard({ governance }: GovernanceCardProps) {
           <CardTitle className="text-2xl">Governance Status</CardTitle>
         </CardHeader>
         <CardContent></CardContent>
-        <div className="flex justify-center mb-8 text-destructive">
+        <div className="flex justify-center mb-8 text-destructive text-xl">
           Governance information not found!
         </div>
       </Card>
@@ -74,11 +74,11 @@ export function GovernanceCard({ governance }: GovernanceCardProps) {
             }}
           >
             <div className="my-2">
-              <TextLine>
-                <b>Pending Approvals:</b>{" "}
-                <span className="text-lg text-destructive">
+              <TextLine className="grid grid-cols-2">
+                <div className="text-xl">Pending Approvals:</div>{" "}
+                <div className="text-lg text-destructive text-center">
                   {pendingApprCount}
-                </span>
+                </div>
               </TextLine>
             </div>
           </SheetTrigger>
@@ -90,12 +90,12 @@ export function GovernanceCard({ governance }: GovernanceCardProps) {
               setSheetContent(["stakeholders", governance.stakeholders]);
             }}
           >
-            <div className="my-2">
-              <TextLine>
-                <b>Stakeholders:</b>{" "}
-                <span className="text-lg">
+            <div>
+              <TextLine className="grid grid-cols-2">
+                <div className="text-xl">Stakeholders:</div>{" "}
+                <div className="text-lg text-center">
                   {governance.stakeholders.length}
-                </span>
+                </div>
               </TextLine>
             </div>
           </SheetTrigger>

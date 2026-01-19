@@ -5,6 +5,7 @@ import { type Project, type ProjectArray } from "./models/project";
 import { type TableArray } from "./models/table";
 import type { OperationArray } from "./models/operation";
 import type { Governance } from "./models/governance";
+import type { TableLineageArray } from "./models/table_lineage";
 
 // because SampleSchema is an object, we need to infer its type
 type SampleDataType = z.infer<typeof SampleSchema>;
@@ -72,4 +73,18 @@ export function GetSampleGovernance(
   }
 
   return g;
+}
+
+export function GetSampleLineages(
+  projectId: string | undefined,
+): TableLineageArray | null {
+  if (projectId === undefined) {
+    return null;
+  }
+
+  if (sampleDataParsed.table_lineage[projectId].length === 0) {
+    return null;
+  }
+
+  return sampleDataParsed.table_lineage[projectId];
 }
