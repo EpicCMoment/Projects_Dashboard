@@ -20,11 +20,13 @@ import { useState } from "react";
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
+  className?: string;
 }
 
-export function DataTable<TData, TValue>({
+export function ApprovalsDataTable<TData, TValue>({
   columns,
   data,
+  className,
 }: DataTableProps<TData, TValue>) {
   const [sorting, setSorting] = useState<SortingState>([]);
 
@@ -40,7 +42,7 @@ export function DataTable<TData, TValue>({
   });
 
   return (
-    <div className="overflow-hidden rounded-md border">
+    <div className={`overflow-hidden rounded-md border ${className || ""}`}>
       <Table className="border-collapse border-l border-r">
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
@@ -77,7 +79,7 @@ export function DataTable<TData, TValue>({
           ) : (
             <TableRow>
               <TableCell colSpan={columns.length} className="h-24 text-center">
-                No data available.
+                No results.
               </TableCell>
             </TableRow>
           )}

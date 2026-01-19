@@ -28,7 +28,7 @@ export function ProjectOverviewCard({ project }: ProjectOverviewCardProps) {
 
   return (
     <>
-      <Card className="bg-primary-foreground rounded-lg h-full border-0 p-4">
+      <Card className="bg-primary-foreground border-0 rounded-lg h-full p-4">
         <CardTitle className="text-2xl">
           {project?.project_name}
           <StatusBadge

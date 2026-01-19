@@ -9,7 +9,7 @@ const ApproverSchema = UserSchema.extend({
   role: z.string(),
 });
 
-const StakeholderSchema = UserSchema;
+const StakeholderSchema = ApproverSchema;
 
 const ApprovalSchema = z.object({
   approval_id: z.string(),
@@ -38,5 +38,7 @@ export const GovernanceSchema = z.object({
 
 export type Governance = z.infer<typeof GovernanceSchema>;
 export type Stakeholder = z.infer<typeof StakeholderSchema>;
+export type StakeholderArray = Stakeholder[];
 export type Approval = z.infer<typeof ApprovalSchema>;
+export type ApprovalArray = Approval[];
 export type Approver = z.infer<typeof ApproverSchema>;
