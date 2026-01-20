@@ -8,7 +8,8 @@ A dashboard for getting the overview of your projects, built with **React**, **V
 * **Build Tool:** Vite
 * **Styling:** Tailwind CSS
 * **Component Library:** Shadcn UI
-* **Routing:** React Router
+* **Routing:** react-router
+* **Graphs:** react-flow
 
 ## 📦 Getting Started
 
