@@ -7,7 +7,11 @@ export function HomePage() {
   return (
     <Layout variant="flex">
       <div>
-        Please select a project from the sidebar or click <b>Projects</b>.
+        Please select a project from the sidebar or click{" "}
+        <b>
+          <a href="/projects">Projects</a>
+        </b>
+        .
       </div>
     </Layout>
   );
